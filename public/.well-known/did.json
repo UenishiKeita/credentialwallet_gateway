@@ -1,0 +1,48 @@
+{
+    "id": "did:web:credentialwallet-gateway.vercel.app",
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        {
+            "@base": "did:web:credentialwallet-gateway.vercel.app"
+        }
+    ],
+    "service": [
+        {
+            "id": "#linkeddomains",
+            "type": "LinkedDomains",
+            "serviceEndpoint": {
+                "origins": [
+                    "https://credentialwallet-gateway.vercel.app/"
+                ]
+            }
+        },
+        {
+            "id": "#hub",
+            "type": "IdentityHub",
+            "serviceEndpoint": {
+                "instances": [
+                    "https://hub.did.msidentity.com/v1.0/28e59e5e-f313-4303-a24f-b9d9eae54a80"
+                ]
+            }
+        }
+    ],
+    "verificationMethod": [
+        {
+            "id": "#f9000e3c8b894b98b2d509b2e5606f19vcSigningKey-6335b",
+            "controller": "did:web:credentialwallet-gateway.vercel.app",
+            "type": "EcdsaSecp256k1VerificationKey2019",
+            "publicKeyJwk": {
+                "crv": "secp256k1",
+                "kty": "EC",
+                "x": "nyWRYWoJ9N8aj07ACwSYJcGwwbvtZXsJt9yY0oV8zt8",
+                "y": "dcceVmpCBof2fHCV_v3UdfBOrFQe94DL1UB_Yp7jQCA"
+            }
+        }
+    ],
+    "authentication": [
+        "#f9000e3c8b894b98b2d509b2e5606f19vcSigningKey-6335b"
+    ],
+    "assertionMethod": [
+        "#f9000e3c8b894b98b2d509b2e5606f19vcSigningKey-6335b"
+    ]
+}
