@@ -198,6 +198,7 @@ export const issueRequest = async (
   const client_api_request_endpoint =
     "https://verifiedid.did.msidentity.com/v1.0/verifiableCredentials/createIssuanceRequest";
   let url = "";
+  let resData;
   try {
     const response = await fetch(client_api_request_endpoint, fetchOptions);
     const resp = await response.json();
@@ -206,6 +207,7 @@ export const issueRequest = async (
     }
     console.log(resp);
     url = resp.url;
+    resData = resp
     console.log("url =", url);
   } catch (e) {
     console.log("ERROR END:", e);
@@ -218,7 +220,7 @@ export const issueRequest = async (
   console.log("### END issueRequest ###");
   //sessionId
 
-  return { pin, url, sessionId };
+  return { pin, url, sessionId, resData };
 };
 
 /**

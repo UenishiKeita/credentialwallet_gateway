@@ -57,7 +57,7 @@ export default async function handler(
   console.log("verifyUrl=", verificationURL);
 
   console.log(`Moodle issuance-request:sesionId = ${req.session.id}`);
-  const { pin, url, sessionId } = await issueRequest(
+  const { pin, url, sessionId, resData } = await issueRequest(
     manifestURL,
     badgeClass, //openBadgeData.badge,
     verificationURL,
@@ -72,5 +72,6 @@ export default async function handler(
     pin,
     url,
     sessionId,
+    resData
   });
 }
