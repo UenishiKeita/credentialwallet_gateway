@@ -12,6 +12,7 @@ type Data = {
   pin: number;
   url: string;
   sessionId: string;
+  resData: any
 };
 
 export default async function handler(
