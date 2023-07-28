@@ -57,24 +57,25 @@ export const createManifest = async () => {
  * @returns
  */
 export const getManifestURL = (id: string): string => {
-  console.log("start getManifestURL badgeClass criteria.id=", id);
-  switch (id) {
-    case "https://www.credly.com/org/project-management-institute/badge/project-management-professional-pmp":
-      return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
-    case "https://moodle.selmid.me/badges/badgeclass.php?id=1":
-      return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/98ae2e87-98d8-30fd-78ad-590ec61e5a6d/manifest";
-    case "https://moodle.selmid.me/badges/badgeclass.php?id=2":
-      return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
-    case "https://moodle.selmid.me/badges/badgeclass.php?id=3":
-      return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
-    case "https://www.credly.com/org/idpro/badge/idpro-member":
-      return "https://beta.did.msidentity.com/v1.0/f88bec5c-c13f-4f27-972f-72540d188693/verifiableCredential/contracts/IDProMember";
-    case "https://www.credly.com/org/idpro/badge/cidpro-exam-writer":
-      return "https://beta.did.msidentity.com/v1.0/f88bec5c-c13f-4f27-972f-72540d188693/verifiableCredential/contracts/CIDProItemWriter";
-    case "https://www.credly.com/org/idpro/badge/cidpro-certified-foundation-level":
-    default:
-      return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/98ae2e87-98d8-30fd-78ad-590ec61e5a6d/manifest";
-  }
+  return "https://verifiedid.did.msidentity.com/v1.0/tenants/28e59e5e-f313-4303-a24f-b9d9eae54a80/verifiableCredentials/contracts/787e95af-2892-b47b-ae53-d8a70b136315/manifest"
+  // console.log("start getManifestURL badgeClass criteria.id=", id);
+  // switch (id) {
+  //   case "https://www.credly.com/org/project-management-institute/badge/project-management-professional-pmp":
+  //     return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
+  //   case "https://moodle.selmid.me/badges/badgeclass.php?id=1":
+  //     return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/98ae2e87-98d8-30fd-78ad-590ec61e5a6d/manifest";
+  //   case "https://moodle.selmid.me/badges/badgeclass.php?id=2":
+  //     return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
+  //   case "https://moodle.selmid.me/badges/badgeclass.php?id=3":
+  //     return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/61ba9848-ccab-a0d5-8242-17348cab3952/manifest";
+  //   case "https://www.credly.com/org/idpro/badge/idpro-member":
+  //     return "https://beta.did.msidentity.com/v1.0/f88bec5c-c13f-4f27-972f-72540d188693/verifiableCredential/contracts/IDProMember";
+  //   case "https://www.credly.com/org/idpro/badge/cidpro-exam-writer":
+  //     return "https://beta.did.msidentity.com/v1.0/f88bec5c-c13f-4f27-972f-72540d188693/verifiableCredential/contracts/CIDProItemWriter";
+  //   case "https://www.credly.com/org/idpro/badge/cidpro-certified-foundation-level":
+  //   default:
+  //     return "https://verifiedid.did.msidentity.com/v1.0/tenants/516c4fed-1f7f-4b23-b9f3-d80b44a2e5bf/verifiableCredentials/contracts/98ae2e87-98d8-30fd-78ad-590ec61e5a6d/manifest";
+  // }
 };
 
 /**
