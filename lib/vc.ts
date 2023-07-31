@@ -37,8 +37,8 @@ const msalConfig = {
 };
 const msalCca = new msal.ConfidentialClientApplication(msalConfig);
 const msalClientCredentialRequest = {
-  //  scopes: ["3db474b9-6a0c-4840-96ac-1fceb342124f/.default"],
-  scopes: [process.env.vcApp_scope],
+  scopes: ["3db474b9-6a0c-4840-96ac-1fceb342124f/.default"],
+  // scopes: [process.env.vcApp_scope],
   skipCache: false,
 };
 
@@ -57,7 +57,9 @@ export const createManifest = async () => {
  * @returns
  */
 export const getManifestURL = (id: string): string => {
-  return "https://verifiedid.did.msidentity.com/v1.0/tenants/28e59e5e-f313-4303-a24f-b9d9eae54a80/verifiableCredentials/contracts/787e95af-2892-b47b-ae53-d8a70b136315/manifest"
+  return "https://verifiedid.did.msidentity.com/v1.0/tenants/28e59e5e-f313-4303-a24f-b9d9eae54a80/verifiableCredentials/contracts/956f2f9a-5d2d-f2ca-fc84-6297ca93db28/manifest"
+  // return "https://verifiedid.did.msidentity.com/v1.0/tenants/28e59e5e-f313-4303-a24f-b9d9eae54a80/verifiableCredentials/contracts/787e95af-2892-b47b-ae53-d8a70b136315/manifest"
+
   // console.log("start getManifestURL badgeClass criteria.id=", id);
   // switch (id) {
   //   case "https://www.credly.com/org/project-management-institute/badge/project-management-professional-pmp":
